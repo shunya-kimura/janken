@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+.image-container {
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+.small-image {
+    width: 100px;
+    height: 100px;
+}
+
+.radio-button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.radio-button-container input[type="radio"] {
+    display: none;
+}
+
+.radio-button-container input[type="radio"] + img {
+    cursor: pointer;
+}
+
+.radio-button-container input[type="radio"]:checked + img {
+    border: 2px solid blue; /* ラジオボタンが選択されたときのスタイル */
+}
+
+.submit-button-container {
+    text-align: center;
+}
+
+input[type="submit"] {
+    background-color: green; /* ボタンの背景色を緑に設定 */
+    color: white; /* ボタンのテキスト色を白に設定 */
+    padding: 10px 20px; /* パディングを追加 */
+    border: none;
+    cursor: pointer;
+}
