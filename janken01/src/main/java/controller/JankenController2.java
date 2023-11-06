@@ -36,8 +36,11 @@ public class JankenController2 extends HttpServlet {
 		String result = "";
 		if ((playerChoice.equals(computerChoice1) && playerChoice.equals(computerChoice2)) 
 				|| (playerChoice.equals("paper") && computerChoice1.equals("rock") && computerChoice2.equals("scissors"))
+				|| (playerChoice.equals("paper") && computerChoice1.equals("scissors") && computerChoice2.equals("rock"))
 				|| (playerChoice.equals("rock") && computerChoice1.equals("scissors") && computerChoice2.equals("paper"))
+				|| (playerChoice.equals("rock") && computerChoice1.equals("paper") && computerChoice2.equals("scissors"))
 				|| (playerChoice.equals("scissors") && computerChoice1.equals("paper") && computerChoice2.equals("rock"))
+				|| (playerChoice.equals("scissors") && computerChoice1.equals("rock") && computerChoice2.equals("paper"))
 			    ) {
 		    result = "引き分け";
 		} else if ((playerChoice.equals("rock") && computerChoice1.equals("scissors") && computerChoice2.equals("scissors"))
